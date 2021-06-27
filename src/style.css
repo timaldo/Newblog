@@ -5,8 +5,8 @@
   --fs-600: 1.875rem;
   --fs-700: 2rem;
 
-  --ff-body: "Roboto", sans-serif;
-  --ff-heading: "Playfair Display", serif;
+  --ff-body: 'Roboto', sans-serif;
+  --ff-heading: 'Playfair Display', serif;
 
   --fw-400: 400;
   --fw-700: 700;
@@ -34,9 +34,7 @@
   }
 }
 
-/* //////////////////////
-  RESET - source: https://piccalil.li/blog/a-modern-css-reset
-  /////////////////////// */
+/* RESET - source: https://piccalil.li/blog/a-modern-css-reset */
 
 /* Box sizing rules */
 *,
@@ -60,8 +58,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul:where([role="list"]),
-ol:where([role="list"]) {
+ul:where([role='list']),
+ol:where([role='list']) {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -115,9 +113,7 @@ select {
   }
 }
 
-/* //////////////////////
-  General styling
-  /////////////////////// */
+/* General styling */
 
 body {
   font-family: var(--ff-body);
@@ -142,11 +138,7 @@ section,
   padding: min(10vh, 10em) 0;
 }
 
-
-
-/* //////////////////////
-  Utility Classes
-  /////////////////////// */
+/* Utility Classes */
 
 /* select all direct childen of .flow
    and add margin to the top for proper
@@ -157,8 +149,8 @@ section,
 }
 
 .container {
-  margin-inline: auto;
-  padding-inline: 1.5em;
+  margin: 0 auto;
+  padding: 0 1.5em;
   max-width: 72rem;
 }
 
@@ -191,10 +183,7 @@ section,
   font-size: var(--fs-600);
 }
 
-
-/* //////////////////////
-  Header
-  /////////////////////// */
+/* Header */
 
 .page-header {
   padding: 2em 0;
@@ -221,9 +210,7 @@ section,
   text-decoration: underline;
 }
 
-/* //////////////////////
-  Footer
-  /////////////////////// */
+/* Footer */
 
 .site-footer {
   --logo-color: currentColor;
@@ -233,9 +220,7 @@ section,
   text-align: center;
 }
 
-/* //////////////////////
-  Homepage
-  /////////////////////// */
+/* Homepage */
 
 .hero > div {
   display: grid;
@@ -266,33 +251,29 @@ section,
   margin: 6rem 0;
 }
 
-/* //////////////////////
-  Individual article page
-  /////////////////////// */
+/* Individual article page */
 
-  .main-article {
-    margin-bottom: 3rem;
-  }
+.main-article {
+  margin-bottom: 3rem;
+}
 
-  .main-article__figure figcaption {
-    margin: 1rem 0;
-    font-size: var(--fs-300);
-    opacity: .9;
-  }
+.main-article__figure figcaption {
+  margin: 1rem 0;
+  font-size: var(--fs-300);
+  opacity: 0.9;
+}
 
-/* //////////////////////
-  Article snippets
-  /////////////////////// */
+/* Article snippets */
 
 .snippet {
   display: grid;
   gap: 1em;
   grid-template-areas:
-    "image"
-    "title"
-    "meta"
-    "body"
-    "button";
+    'image'
+    'title'
+    'meta'
+    'body'
+    'button';
 }
 
 .snippet__image {
@@ -330,15 +311,15 @@ section,
 .snippet__title a:hover,
 .snippet__title a:focus {
   color: var(--clr-primary-500);
-} 
+}
 
 @media (min-width: 45em) {
   .snippet {
     grid-template-areas:
-      "title image"
-      "meta image"
-      "body image"
-      "button image";
+      'title image'
+      'meta image'
+      'body image'
+      'button image';
     grid-column-gap: 4em;
     grid-template-columns: 1fr 40%;
     grid-template-rows: min-content min-content min-content 1fr;
@@ -370,7 +351,7 @@ section,
 .btn--primary:hover,
 .btn--primary:focus {
   background: var(--clr-primary-500);
-  border-color: var(--clr-primary-500); 
+  border-color: var(--clr-primary-500);
 }
 
 .btn--neutral {
